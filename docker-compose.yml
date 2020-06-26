@@ -1,0 +1,8 @@
+version: '2.0'
+
+services:
+    account-service-server:
+        build: .
+        image: wandsilva/account-service-server
+        ports:
+            - "3000:80"
