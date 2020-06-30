@@ -3,6 +3,6 @@ version: '2.0'
 services:
     account-service-server:
         build: .
-        image: wandsilva/account-service-server
+        image: wandsilva/go-account-service-server:1.0.0
         ports:
-            - "3000:80"
+            - "3000:3000"
