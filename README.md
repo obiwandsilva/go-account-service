@@ -1,6 +1,6 @@
 # go-account-service
 
-This is a http web client implemented in Go and that makes use of Go Modules.
+This is an http web server implemented in Go and using Go Modules.
 
 # Usage
 
