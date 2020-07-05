@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: account-server-deployment
+    labels:
+        account-service-deploy: server
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: account-server
+    template:
+        metadata:
+            labels:
+                app: account-server
+                account-service-instance: server
+        spec:
+            containers:
+                -   name: go-account-service-server
+                    image: wandsilva/go-account-service-server:1.0.0
+                    ports:
+                        -   containerPort: 3000
